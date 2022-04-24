@@ -1,0 +1,209 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-color: darkviolet;
+}
+
+i {
+    display: none;
+}
+.flex-container {
+    display: flex;
+}
+ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+.fa-bars {
+   visibility: hidden;
+}
+.hamburger {
+    display: none;
+}
+.hamburger.visible {
+    display: initial;
+}
+ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+    #testnav {
+        display: none;
+    }
+    .fa-bars {
+       visibility: initial;
+    }
+}
+
+nav {
+    width: 100vw;
+    background-color: #25031a;
+    height: 7vh;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav-item > a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-right: 0.5em;
+}
+.home {
+    padding-right: 1em;
+}
+
+.job-title {
+    background-image: url("../images/bg.jpg");
+    background-size: 102%;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
+.job-title > h1 {
+    font-size: 3em;
+    align-self: center;
+    padding-left: 1em;
+    padding-top: 3em;
+}
+
+#about {
+    background-color: lightgray;
+    width: 100vw;
+    height: 100vh;
+    padding: 10em 7em 0 1em;
+}
+h2 {
+    text-transform: uppercase;
+}
+.about-container-text {
+  padding: 2em;
+}
+.about-container-text > h2 {
+    padding-bottom: 1em;
+}
+
+.about.about-container-text > p {
+    text-align: center;
+}
+
+[alt="keypad"] {
+    width: 40vw;
+    height: auto;
+}
+
+[alt="Profile image"] {
+     width: 20vw;
+     height: auto;
+ }
+
+#portfolio {
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgray;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3em;
+}
+
+.portfolio-container-projects {
+    justify-content: space-around;
+    width: 100vw;
+    height: 70vh;
+    flex-direction: row;
+    background-color: lightgray;
+    padding-top: 5em;
+}
+.portfolio-project-flashcard {
+    flex-direction: column;
+}
+.portfolio-project-virtual_piano {
+    flex-direction: column;
+}
+
+[alt="Project one"] {
+    width: 30vw;
+    height: auto;
+}
+
+[alt="Project two"] {
+    width: 30vw;
+    height: auto;
+}
+
+.window.visible, .overlay.visible{
+    opacity: 1;
+    pointer-events: auto;
+}
+.window {
+    position: fixed;
+    top: 20%;
+    right: 30%;
+    background-color: wheat;
+    color: black;
+    box-shadow: black;
+    border-radius: 8px;
+    opacity: 0;
+    pointer-events: none;
+}
+#dialog-flash {
+    width: 40%;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 300ms ease-in-out;
+}
+
+#contacts {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts-text {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 1em;
+}
+.social_media {
+    justify-content: center;
+    flex-direction: row;
+    padding: 0 2em 0 2em;
+}
+.social_media > a > img {
+    width: 30px;
+    height: auto;
+}
+ footer {
+     height: 20vh;
+     background-color: #25031a;
+     color: white;
+     align-items: center;
+     flex-direction: column;
+ }
+ .footer-item > h2 {
+     padding-top: 1em;
+ }
+
+
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <title>Jane Doe, front-end developper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/90909ff39a.js" crossorigin="anonymous"></script>
+</head>
+<body class="">
+<header>
+    <nav id="testnav" class="flex-container">
+        <div class="flex-item nav-item about">
+            <a href="#about">About me</a>
+        </div>
+        <div class="flex-item nav-item portfolio">
+            <a href="#portfolio">Portfolio</a>
+        </div>
+        <div class="flex-item nav-item contacts">
+            <a href="#contacts">Contacts</a>
+        </div>
+        <div class="flex-item nav-item home">
+            <a href="#home">Home</a>
+        </div>
+    </nav>
+
+    <div class="flex-container job-title">
+        <h1 class="flex-item home">Jane Doe,</br>Front-end developer</h1>
+    </div>
+    <i class="fa-solid fa-bars" onclick="openDialog('hamburger')"></i>
+    <ul class="hamburger" id="hamburger">
+        <li><i class="fa-solid fa-xmark" onclick="closeDialog('hamburger')"></i></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#portfolio">Portfolio</a>
+        </li>
+        <li><a href="#contacts">Contacts</a>
+        </li>
+        <li><a href="#home">Home</a>
+        </li>
+    </ul>
+</header>
+
+<section id="about" class="flex-container">
+    <div class=”flex-item about-img-keybord”>
+        <img src="../images/image.jpg" alt="keypad">
+    </div>
+    <div class=”flex-item about-img-profile”>
+        <img src="../images/person.jpg" alt="Profile image">
+    </div>
+    <div class="flex-item about-container-text">
+        <h2>About me</h2>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    </div>
+</section>
+
+
+<section id="portfolio" class="flex-container">
+    <div class="flex-item portfolio-title">
+        <h2>Portfolio</h2>
+    </div>
+
+    <div class="flex-container portfolio-container-projects">
+        <div class="flex-container portfolio-project-flashcard">
+            <div>
+                <img src="../images/project1.png" alt="Project one">
+            </div>
+            <div>
+                <p>Flashcard</p>
+                <button class="open-window" onclick="openDialog('dialog-flash')">See more</button>
+            </div>
+        </div>
+        <div class="flex-container portfolio-project-virtual_piano">
+            <div>
+                <img src="../images/project2.png" alt="Project two">
+            </div>
+            <div>
+                <p>Virtual Piano</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contacts" class="flex-container">
+ <div class="contacts-text flex-container">
+     <h2>Contacts</h2>
+     <p>You can contact me at
+         <a href="janedoe.@gmail.com">janedoe@gmail.cm</a></p>
+     <p>or phone number <a href="+1234567890">+1234567890</a> </p>
+ </div>
+    <div class="flex-container social_media">
+        <a href="" title="github"><img src="../images/github.svg"></a>
+        <a href="" title="twitter"><img src="../images/twitter.svg"></a>
+        <a href="" title="facebook"><img src="../images/facebook.svg"></a>
+        <a href="" title="instagram"><img src="../images/instagram.svg"></a>
+    </div>
+ </section>
+
+<footer class="flex-container">
+    <div class="flex-item footer-item">
+        <h2>Jane Doe</h2>
+    </div>
+    <div class="flex-item footer-item">
+        <p>2020</p>
+    </div>
+</footer>
+<div class="overlay"></div>
+<div class="window" id="dialog-flash">
+        <h3>Flashcards</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, …“ ist ein Blindtext, der nichts bedeuten soll, sondern als Platzhalter im Layout verwendet wird, um einen Eindruck vom fertigen Dokument zu erhalten.</p>
+        <a href="#" role="button" class="dialog-close-button" onclick="closeDialog('dialog-flash')">Close</a>
+</div>
+<script src="portfolio.js"></script>
+</body>
+</html>
